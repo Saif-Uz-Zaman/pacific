@@ -1,0 +1,50 @@
+/* --- Background Image Section --- */
+.bg-img  {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+}
+
+.bg-img.bg-half{
+	width: 50%;
+	background-attachment:scroll;
+}
+
+.bg-img.bg-half.bg-right {
+	left: 50%;
+}
+
+.bg-img.overlay:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.9;
+}
+
+.bg-img.overlay:after {
+	background-color: #FFF;
+}
+
+.bg-img.bg-half.overlay:after {
+	display: none;
+}
+
+@media only screen and (max-width: 991px) {
+	.bg-img.bg-half.overlay:after {
+		display: block;
+	}
+	.bg-img.bg-half {
+		width: 100%;
+	}
+	.bg-img.bg-half.bg-right {
+		left: 0%;
+	}
+}

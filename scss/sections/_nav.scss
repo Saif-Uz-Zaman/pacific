@@ -1,0 +1,294 @@
+
+/*------------------------------------*\
+	Logo
+\*------------------------------------*/
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand .logo {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.navbar-brand .logo > img {
+	max-height: 40px;
+}
+
+/*------------------------------------*\
+	Navigation
+\*------------------------------------*/
+
+#header {
+	position:relative;
+	z-index:10;
+}
+
+#header .navbar {
+	margin-bottom: 0px;
+	border-radius: 0px;
+	border: none;
+}
+
+#header .nav li a:hover , #header .nav li a:focus {
+	background-color: transparent;
+}
+
+/* --- Top Navigation --- */
+#top-navbar {
+	background-color: #001232;
+}
+
+#top-navbar .nav li a {
+	color: #FFF;
+}
+#top-navbar .nav li a i {
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	line-height: 30px;
+	color: #FFD626;
+	border: 2px solid #FFD626;
+	border-radius: 50%;
+	margin-right: 5px;
+	font-size: 14px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+#top-navbar .nav li a:hover i {
+	background-color: #FFD626;
+	color: #004;
+}
+
+/* --- Main Navigation --- */
+
+#main-navbar {
+	background-color: #FFF;
+}
+
+#main-navbar.fixed-navbar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	-webkit-box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+}
+
+/* --- Default Dropdown --- */
+@media only screen and (min-width: 768px) {
+	.has-dropdown {
+		position: relative;
+	}
+	.has-dropdown:after {
+		font-family: 'FontAwesome';
+		content: "\f0d7";
+		-webkit-transition: 0.2s -webkit-transform;
+		transition: 0.2s -webkit-transform;
+		transition: 0.2s transform;
+		transition: 0.2s transform, 0.2s -webkit-transform;
+		position: absolute;
+		right: 5px;
+		font-size: 10px;
+		color: #004;
+		top: 15px;
+	}
+	.dropdown {
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateX(-10px);
+			-ms-transform: translateX(-10px);
+				transform: translateX(-10px);
+		position: absolute;
+		width: 250px;
+		background-color: #FFF;
+		border: 1px solid #EEE;
+		-webkit-transition: 0.2s all;
+			transition: 0.2s all;
+	}
+
+	.main-navbar > .has-dropdown > .dropdown .dropdown {
+		top: 0px;
+		left: 100%;
+	}
+	.has-dropdown:hover > .dropdown {
+		opacity:1;
+		visibility:visible;
+		-webkit-transform: translateX(0px);
+			-ms-transform: translateX(0px);
+				transform: translateX(0px);
+	}
+
+	.dropdown li {
+		border-bottom: 1px solid #EEE;
+	}
+
+	.dropdown li:nth-last-child(1) {
+		border-bottom: 0px;
+	}
+
+	.dropdown li a {
+		display: block;
+		padding: 10px 10px;
+		-webkit-transition: 0.2s -webkit-transform;
+		transition: 0.2s -webkit-transform;
+		transition: 0.2s transform;
+		transition: 0.2s transform, 0.2s -webkit-transform;
+	}
+
+	.dropdown li a:hover {
+		-webkit-transform: translateX(3px);
+		    -ms-transform: translateX(3px);
+		        transform: translateX(3px);
+		-webkit-box-shadow: -4px 0px 0px 0px #FFD626;
+			box-shadow: -4px 0px 0px 0px #FFD626;
+	}
+
+}
+
+/* --- Mobile Nav --- */
+@media only screen and (max-width: 767px) {
+	#main-navbar  {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.main-navbar {
+		margin: 0px -15px;
+		border-top: 1px solid #EEE;
+		max-height: 0;
+		overflow-y: scroll;
+		-webkit-transition: 0.3s max-height;
+		transition: 0.3s max-height;
+	}
+
+	.main-navbar li {
+		border-bottom: 1px solid #EEE;
+	}
+
+	.main-navbar.main-navbar-collapsed {
+		max-height: 500px;
+	}
+
+	/* Mobile Dropdown */
+	.has-dropdown {
+		position: relative;
+	}
+
+	.has-dropdown:after {
+		font-family: 'FontAwesome';
+		content: "\f067";
+		position: absolute;
+		right: 10px;
+		font-size: 10px;
+		color: #004;
+		top: 10px;
+	}
+
+	.has-dropdown.dropdown-collapsed:after {
+		content: "\f068";
+	}
+
+	.has-dropdown.dropdown-collapsed  > .dropdown  {
+		display:block;
+	}
+
+	.dropdown  {
+		display: none;
+		margin: 0px 15px 15px;
+		border: 1px solid #EEE;
+	}
+
+	.dropdown li:nth-last-child(1) {
+		border-bottom: 0px;
+	}
+
+	.dropdown li a {
+		display: block;
+		padding: 10px 10px;
+		-webkit-transition: 0.2s -webkit-transform;
+		transition: 0.2s -webkit-transform;
+		transition: 0.2s transform;
+		transition: 0.2s transform, 0.2s -webkit-transform;
+	}
+
+	.dropdown li a:hover {
+		-webkit-transform: translateX(3px);
+		    -ms-transform: translateX(3px);
+		        transform: translateX(3px);
+		-webkit-box-shadow: -4px 0px 0px 0px #FFD626;
+			box-shadow: -4px 0px 0px 0px #FFD626;
+	}
+}
+
+/* --- Navbar Mobile Toggle --- */
+@media only screen and (min-width: 768px) {
+	.navbar-toggle-btn {
+		display: none !important;
+	}
+}
+
+.navbar-toggle-btn {
+	position: relative;
+	display: block;
+	width: 50px;
+	float: right;
+	height: 50px;
+	background: transparent;
+	border: none;
+}
+
+
+.navbar-toggle-btn span {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: 10px;
+	-webkit-transition: 0.2s background;
+	transition: 0.2s background;
+}
+
+.navbar-toggle-btn span:after , .navbar-toggle-btn span:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	-webkit-transition: 0.2s -webkit-transform;
+	transition: 0.2s -webkit-transform;
+	transition: 0.2s transform;
+	transition: 0.2s transform, 0.2s -webkit-transform;
+}
+
+.navbar-toggle-btn span , .navbar-toggle-btn span:after , .navbar-toggle-btn span:before {
+	height: 4px;
+	width: 30px;
+	background-color: #004;
+}
+
+.navbar-toggle-btn span:before {
+	top: -10px;
+}
+
+.navbar-toggle-btn span:after {
+	top: 10px;
+}
+
+.navbar-toggle-btn.toggle-btn-collapsed span {
+	background: transparent;
+}
+
+.navbar-toggle-btn.toggle-btn-collapsed span:before {
+	-webkit-transform: translateY(10px) rotate(45deg);
+	    -ms-transform: translateY(10px) rotate(45deg);
+	        transform: translateY(10px) rotate(45deg);
+}
+
+.navbar-toggle-btn.toggle-btn-collapsed span:after {
+	-webkit-transform: translateY(-10px) rotate(-45deg);
+	    -ms-transform: translateY(-10px) rotate(-45deg);
+	        transform: translateY(-10px) rotate(-45deg);
+}

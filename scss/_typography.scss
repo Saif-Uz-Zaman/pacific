@@ -1,0 +1,53 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #64728A;
+	letter-spacing: 0.3px;
+	overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #004;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+a {
+	color: #004;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+	color: #004;
+    text-decoration: none;
+    outline: none
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.white-text {
+	color: #FFF;
+}

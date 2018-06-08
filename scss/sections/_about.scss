@@ -1,0 +1,49 @@
+/*------------------------------------*\
+	About
+\*------------------------------------*/
+.about {
+  padding: 0 100px;
+  padding-bottom: 40px;
+}
+
+.about > img {
+  display: block;
+	width: 100%;
+	border-bottom: 4px solid #FFD626;
+
+}
+
+.about p {
+  text-align: justify;
+}
+
+/*------------------------------------*\
+	Numbers
+\*------------------------------------*/
+
+.number {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 70px;
+}
+
+.number i {
+	position: absolute;
+	left:0;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 35px;
+	color: #004;
+	text-align: center;
+}
+
+.number h3 {
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+
+.number span {
+	color: #004;
+}

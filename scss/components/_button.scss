@@ -1,0 +1,55 @@
+/* --- Buttons --- */
+
+.main-button , .secondary-button {
+	display: inline-block;
+	position: relative;
+	padding: 10px 30px;
+	border: 1px solid transparent;
+	z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 0%;
+    -webkit-transition: 0.2s height;
+    transition: 0.4s height;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    height: 100%;
+  }
+}
+
+.main-button  {
+	background-color: #001232;
+	color: #FFF;
+
+  &::after {
+    background-color:#FFD626;
+  }
+
+  &:hover {
+    color: #004;
+  }
+
+  &:focus {
+    color: #FFF;
+  }
+}
+
+.secondary-button {
+	background-color: #FFD626;
+	color: #004;
+
+  &::after {
+    background-color:#001232;
+  }
+
+  &:hover {
+  	color: #FFF;
+  }
+}

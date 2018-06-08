@@ -1,0 +1,33 @@
+/* --- Section Header --- */
+
+.section-header {
+	margin-bottom: 60px;
+}
+
+.title {
+	position: relative;
+	padding-left: 15px;
+	transition: transform 1s;
+
+}
+
+.text-center .title {
+	display: inline-block;
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background-color: #FFD626;
+	transition: transform .5s;
+
+}
+
+.sub-title {
+	color: #64728A;
+	margin-bottom: 0px;
+}

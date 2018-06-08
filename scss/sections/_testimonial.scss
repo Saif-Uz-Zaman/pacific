@@ -1,0 +1,56 @@
+/*------------------------------------*\
+	Testimonial
+\*------------------------------------*/
+
+.testimonial .testimonial-quote {
+	position: relative;
+	margin-bottom: 30px;
+	padding-top: 45px;
+	text-align: center;
+}
+
+.testimonial .testimonial-quote:before {
+	content: "\f10d";
+	left: 50%;
+	top: 0px;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	display: block;
+	font-family: 'FontAwesome';
+	position: absolute;
+	color: #004;
+	font-size: 35px;
+}
+
+.testimonial .testimonial-meta {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.testimonial .testimonial-meta h3 {
+	margin-bottom: 5px;
+}
+
+.testimonial .testimonial-meta span {
+	text-transform: uppercase;
+}
+
+
+/*------------------------------------*\
+	Partners
+\*------------------------------------*/
+
+.partner {
+	display: block;
+	border: 2px solid transparent;
+}
+
+.partner:hover {
+	border-color: #FFD626;
+}
+
+.partner > img {
+	width: 100%;
+}
+//

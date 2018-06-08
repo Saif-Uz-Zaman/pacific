@@ -1,0 +1,109 @@
+.footer-widget {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* -- footer logo -- */
+.footer-logo .logo {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.footer-logo .logo > img{
+	max-height: 50px;
+}
+
+.footer-contact li {
+	margin-top: 10px;
+}
+
+/* -- footer contact -- */
+.footer-contact li a {
+	color: #64728A;
+}
+
+.footer-contact li a i {
+	color: #FFD626;
+	margin-right: 15px;
+}
+
+/* -- footer links -- */
+.footer-links li {
+	margin-top: 10px;
+}
+
+.footer-links li a {
+	display: inline-block;
+	font-size: 14px;
+	color: #64728A;
+	-webkit-transition: 0.2s color, 0.2s -webkit-transform;
+	transition: 0.2s color, 0.2s -webkit-transform;
+	transition: 0.2s transform, 0.2s color;
+	transition: 0.2s transform, 0.2s color, 0.2s -webkit-transform;
+}
+
+.footer-links li a:hover {
+	-webkit-transform: translateX(3px);
+	    -ms-transform: translateX(3px);
+	        transform: translateX(3px);
+	color: #FFF;
+}
+
+/* -- footer subscribe -- */
+.footer-subscribe {
+	position: relative;
+	margin-top: 30px;
+}
+
+.footer-subscribe .input {
+	padding-right: 125px;
+}
+
+.footer-subscribe button {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	padding: 0px 20px;
+	background: #FFD626;
+	border: none;
+	color: #004;
+	font-size: 14px;
+}
+
+/* -- footer social -- */
+.footer-social {
+	margin-top: 30px;
+}
+
+.footer-social li {
+	display:inline-block;
+}
+
+.footer-social li a {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	line-height: 30px;
+	color: #FFD626;
+	border: 2px solid #FFD626;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 14px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.footer-social li a:hover {
+	background-color: #FFD626;
+	color: #004;
+}
+
+/* -- Bottom Footer -- */
+#footer #bottom-footer {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+#footer #bottom-footer a {
+	color: #FFD626;
+}
